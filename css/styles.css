@@ -5,6 +5,7 @@ html {
 
 /* take me to the top */
 #toTopBtn {
+  border-radius: 50%;
   position: fixed;
   bottom: 26px;
   right: 39px;
