@@ -1,0 +1,263 @@
+/* scroll animation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* take me to the top */
+#toTopBtn {
+  position: fixed;
+  bottom: 26px;
+  right: 39px;
+  z-index: 98;
+  padding: 21px;
+  background-color: #ef8172;
+}
+
+.js .cd-top--fade-out {
+  opacity: .5
+}
+
+.js .cd-top--is-visible {
+  visibility: visible;
+  opacity: 1
+}
+
+.js .cd-top {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s, visibility .1s, background-color .1s
+}
+
+.cd-top {
+  position: fixed;
+  bottom: 20px;
+  bottom: var(--cd-back-to-top-margin);
+  right: 20px;
+  right: var(--cd-back-to-top-margin);
+  display: inline-block;
+  height: 40px;
+  height: var(--cd-back-to-top-size);
+  width: 40px;
+  width: var(--cd-back-to-top-size);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+  background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+  background-color: hsla(5, 76%, 62%, .8);
+  background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+
+/* body */
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+
+::selection {
+  color: #f53163;
+  background: #e4c2c1;
+}
+
+.navbar {
+  padding: .5rem 0rem;
+  margin-bottom: 70px;
+}
+
+/* navigation bar */
+.navbar-brand {
+  font-size: 1.3rem;
+  font-family: "Ubuntu";
+  font-weight: lighter;
+}
+
+/* navigation items */
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.3;
+  color: #ffe9ec;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #8f8f8f;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+  padding: 0.5% 8% 15%;
+}
+
+.button-class {
+  margin-top: 40px;
+}
+
+.download-button {
+  margin-right: 2%;
+}
+
+.col-lg-6 {
+  margin-bottom: 50px;
+}
+
+/* title Image */
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+/* optimize the mobile version */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* features column */
+#features {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  padding: 7% 15%;
+}
+
+.features-box {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 20px;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* testimonials */
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.Tucker-Budzyn {
+  width: 12%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-image {
+  width: 12%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+/* pricing */
+#pricing {
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.pricingtable {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+.pricingp {
+  font-family: 'Montserrat', sans-serif;
+  color: #8f8f8f;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.pricingb {
+  margin-top: 65px;
+}
+
+.card-header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* cta */
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+  padding: 5% 10%;
+}
+
+.cta-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.3;
+  color: #ffe9ec;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+/* footer */
+#footer {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.footer-icons {
+  padding: 1%;
+}
+
+.social-icons {
+  color: black;
+  margin: 20px 10px;
+}
+
+.social-icons:hover{
+  color: #ff4c68;
+}
